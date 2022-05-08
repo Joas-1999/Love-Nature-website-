@@ -1,5 +1,71 @@
 @use './partials/' as *;
 
 body {
-    background-color: $dark-olive-green;
+    background-color: black;
+}
+
+// Header
+.site-header {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    .brand img {
+        width: $logo-width;
+    }
+
+    .hamburger {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $gold-web-golden;
+        border-radius: 50%;
+        display: none;
+
+        i {
+            font-size: 1.6rem;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        .menu-item {
+            text-decoration: none;
+            margin: 0 1.3rem;
+            color: $white;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $gold-web-golden;
+            }
+        }
+
+        .menu-contact {
+            padding: 15px 25px;
+            background-color: transparent;
+            border: 1px solid $white;
+            border-radius: $btn-border-radius;
+            margin-left: 1.3rem;
+            transition: all .3s ease;
+
+            &:hover {
+                border: 1px solid $gold-web-golden;
+                background-color: $gold-web-golden;
+            }
+
+            a {
+                color: $white;
+            }
+        }
+    }
 }
