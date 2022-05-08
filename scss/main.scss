@@ -74,9 +74,10 @@ body {
             }
         }
 
-        .menu-contact {
+        .contact-btn {
             padding: 15px 25px;
             background-color: transparent;
+            color: $white;
             border: 1px solid $white;
             border-radius: $btn-border-radius;
             margin-left: 1.3rem;
@@ -85,10 +86,6 @@ body {
             &:hover {
                 border: 1px solid $gold-web-golden;
                 background-color: $gold-web-golden;
-            }
-
-            a {
-                color: $white;
             }
 
             @include breakpoint (tablet) {

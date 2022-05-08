@@ -436,28 +436,26 @@ body {
     margin: 1rem 2rem;
   }
 }
-.site-header .menu .menu-contact {
+.site-header .menu .contact-btn {
   padding: 15px 25px;
   background-color: transparent;
+  color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 5px;
   margin-left: 1.3rem;
   transition: all 0.3s ease;
 }
-.site-header .menu .menu-contact:hover {
+.site-header .menu .contact-btn:hover {
   border: 1px solid #ffd935;
   background-color: #ffd935;
 }
-.site-header .menu .menu-contact a {
-  color: #ffffff;
-}
 @media (max-width: 768px) {
-  .site-header .menu .menu-contact {
+  .site-header .menu .contact-btn {
     border: 1px solid #ffd935;
     background-color: #ffd935;
     margin: 1rem 2rem;
   }
-  .site-header .menu .menu-contact:hover {
+  .site-header .menu .contact-btn:hover {
     background-color: #000000;
     border: 1px solid #000000;
   }

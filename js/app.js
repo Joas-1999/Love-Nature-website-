@@ -5,6 +5,6 @@ const menuIcon = document.querySelector('i');
 
 hamburger.addEventListener('click', e => {
     menu.classList.toggle('active');
-    menuIcon.classList.toggle('fa-xmark')
-})
+    menuIcon.classList.toggle('fa-xmark');
+});
 
