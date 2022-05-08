@@ -1,1 +1,5 @@
 @use './partials/' as *;
+
+body {
+    background-color: $dark-olive-green;
+}
