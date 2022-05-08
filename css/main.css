@@ -376,7 +376,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 2rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -397,9 +397,29 @@ body {
 .site-header .hamburger i {
   font-size: 1.6rem;
 }
+@media (max-width: 768px) {
+  .site-header .hamburger {
+    display: flex;
+  }
+}
 .site-header .menu {
   display: flex;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .site-header .menu {
+    position: absolute;
+    left: 0;
+    top: 7rem;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    width: 100%;
+    display: none;
+  }
+  .site-header .menu.active {
+    display: flex;
+  }
 }
 .site-header .menu .menu-item {
   text-decoration: none;
@@ -409,6 +429,12 @@ body {
 }
 .site-header .menu .menu-item:hover {
   color: #ffd935;
+}
+@media (max-width: 768px) {
+  .site-header .menu .menu-item {
+    color: #000000;
+    margin: 1rem 2rem;
+  }
 }
 .site-header .menu .menu-contact {
   padding: 15px 25px;
@@ -424,6 +450,17 @@ body {
 }
 .site-header .menu .menu-contact a {
   color: #ffffff;
+}
+@media (max-width: 768px) {
+  .site-header .menu .menu-contact {
+    border: 1px solid #ffd935;
+    background-color: #ffd935;
+    margin: 1rem 2rem;
+  }
+  .site-header .menu .menu-contact:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
