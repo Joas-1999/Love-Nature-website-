@@ -109,7 +109,7 @@ a {
 .site-header .hamburger i {
   font-size: 1.6rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .site-header .hamburger {
     display: flex;
   }
@@ -118,7 +118,7 @@ a {
   display: flex;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .site-header .menu {
     position: absolute;
     left: 0;
@@ -142,7 +142,7 @@ a {
 .site-header .menu .menu-item:hover {
   color: #ffd935;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .site-header .menu .menu-item {
     color: #000000;
     margin: 1rem 2rem;
@@ -161,7 +161,7 @@ a {
   border: 1px solid #ffd935;
   background-color: #ffd935;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .site-header .menu .contact-btn {
     border: 1px solid #ffd935;
     background-color: #ffd935;
@@ -184,9 +184,9 @@ a {
   place-items: center;
   position: relative;
 }
-@media (max-width: 1024px) {
+@media screen and (orientation: landscape) {
   .site-hero {
-    min-height: 50vh;
+    min-height: 485px;
   }
 }
 .site-hero::after {

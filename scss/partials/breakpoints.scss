@@ -1,14 +1,7 @@
 // Breakpoint mixin
 @mixin breakpoint ($size) {
-    @if $size == laptop {
-        @media (max-width: 1024px) { @content; }
-    } @else if $size == tablet {
-        @media (max-width: 768px) { @content; }
-    } @else if $size == mobile-L {
-        @media (max-width: 425px) { @content; }
-    } @else if $size == mobile-M {
-        @media (max-width: 375px) { @content; }
-    } @else if $size == mobile-S {
-        @media (max-width: 320px) { @content; }
-    }
+    @if $size == laptop { @media screen and (max-width: 1024px) { @content; } } 
+    @else if $size == tablet { @media screen and (max-width: 768px) { @content; } } 
+    @else if $size == mobile-L { @media screen and (max-width: 425px) { @content; } } 
+    @else if $size == mobile-landscape { @media screen and (orientation: landscape) { @content; } }
 }
