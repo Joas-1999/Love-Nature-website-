@@ -103,7 +103,7 @@
 //Hero
 .site-hero {
     width: 100%;
-    min-height: 60vh;
+    min-height: 65vh;
     background-image: url('../img/header-hero.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -111,6 +111,10 @@
     display: grid;
     place-items: center;
     position: relative;
+
+    @include breakpoint (laptop) {
+        min-height: 50vh;
+    }
 
     &::after {
         content: '';

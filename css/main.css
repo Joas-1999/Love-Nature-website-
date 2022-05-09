@@ -175,7 +175,7 @@ a {
 
 .site-hero {
   width: 100%;
-  min-height: 60vh;
+  min-height: 65vh;
   background-image: url("../img/header-hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -183,6 +183,11 @@ a {
   display: grid;
   place-items: center;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .site-hero {
+    min-height: 50vh;
+  }
 }
 .site-hero::after {
   content: "";
