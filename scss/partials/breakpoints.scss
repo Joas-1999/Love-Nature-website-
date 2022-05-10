@@ -2,6 +2,5 @@
 @mixin breakpoint ($size) {
     @if $size == laptop { @media screen and (max-width: 1024px) { @content; } } 
     @else if $size == tablet { @media screen and (max-width: 768px) { @content; } } 
-    @else if $size == mobile-L { @media screen and (max-width: 425px) { @content; } } 
-    @else if $size == mobile-landscape { @media screen and (orientation: landscape) { @content; } }
+    @else if $size == mobile { @media screen and (max-width: 425px) { @content; } } 
 }
