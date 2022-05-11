@@ -219,6 +219,14 @@
     column-gap: 2rem;
     justify-content: center;
 
+    @include breakpoint (laptop-M) {
+        grid-template-areas: 
+        "service-title"
+        "web-design"
+        "graphic-design"
+        "content-creation";
+    }
+
     .services-title {
         font-size: 40px;
         color: $dark-olive-green;
@@ -242,6 +250,10 @@
 
     .web-design {
         grid-area: web-design;
+
+        .service-img {
+            width: 100%;
+        }
         
         .service-title {
             font-size: 20px;
@@ -260,6 +272,10 @@
     .graphic-design {
         grid-area: graphic-design;
 
+        .service-img {
+            width: 100%;
+        }
+
         .service-title {
             font-size: 20px;
             color: $dark-olive-green;
@@ -276,6 +292,10 @@
 
     .content-creation {
         grid-area: content-creation;
+
+        .service-img {
+            width: 100%;
+        }
 
         .service-title {
             font-size: 20px;

@@ -1,6 +1,7 @@
 // Breakpoint mixin
 @mixin breakpoint ($size) {
-    @if $size == laptop { @media screen and (max-width: 1024px) { @content; } } 
+    @if $size == laptop-M { @media screen and (max-width: 1200px) { @content; }  }
+    @else if $size == laptop { @media screen and (max-width: 1024px) { @content; } } 
     @else if $size == tablet { @media screen and (max-width: 768px) { @content; } } 
     @else if $size == mobile { @media screen and (max-width: 425px) { @content; } } 
 }

@@ -290,6 +290,11 @@ a {
   column-gap: 2rem;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .site-services {
+    grid-template-areas: "service-title" "web-design" "graphic-design" "content-creation";
+  }
+}
 .site-services .services-title {
   font-size: 40px;
   color: #536942;
@@ -312,6 +317,9 @@ a {
 .site-services .web-design {
   grid-area: web-design;
 }
+.site-services .web-design .service-img {
+  width: 100%;
+}
 .site-services .web-design .service-title {
   font-size: 20px;
   color: #536942;
@@ -326,6 +334,9 @@ a {
 .site-services .graphic-design {
   grid-area: graphic-design;
 }
+.site-services .graphic-design .service-img {
+  width: 100%;
+}
 .site-services .graphic-design .service-title {
   font-size: 20px;
   color: #536942;
@@ -339,6 +350,9 @@ a {
 }
 .site-services .content-creation {
   grid-area: content-creation;
+}
+.site-services .content-creation .service-img {
+  width: 100%;
 }
 .site-services .content-creation .service-title {
   font-size: 20px;
