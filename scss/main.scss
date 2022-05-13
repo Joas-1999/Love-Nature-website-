@@ -212,20 +212,8 @@
     margin: 0 auto;
     padding: 5rem 0;
     display: grid;
-    grid-template-areas: 
-    ". service-title ."
-    "web-design graphic-design content-creation";
-    row-gap: 5rem;
-    column-gap: 2rem;
-    justify-content: center;
-
-    @include breakpoint (laptop-M) {
-        grid-template-areas: 
-        "service-title"
-        "web-design"
-        "graphic-design"
-        "content-creation";
-    }
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: 100px 1fr;
 
     .services-title {
         font-size: 40px;
@@ -233,7 +221,7 @@
         letter-spacing: -2px;
         position: relative;
         text-align: center;
-        grid-area: service-title;
+        grid-column: 2/3;
 
         &::after {
             content: '';
@@ -249,11 +237,7 @@
     }
 
     .web-design {
-        grid-area: web-design;
-
-        .service-img {
-            width: 100%;
-        }
+        grid-column: 1/2;
         
         .service-title {
             font-size: 20px;
@@ -270,11 +254,7 @@
     }
 
     .graphic-design {
-        grid-area: graphic-design;
-
-        .service-img {
-            width: 100%;
-        }
+        grid-column: 2/3;
 
         .service-title {
             font-size: 20px;
@@ -291,11 +271,7 @@
     }
 
     .content-creation {
-        grid-area: content-creation;
-
-        .service-img {
-            width: 100%;
-        }
+        grid-column: 3/5;
 
         .service-title {
             font-size: 20px;
