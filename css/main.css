@@ -281,73 +281,50 @@ a {
 }
 
 .site-services {
-  max-width: 1140px;
-  margin: 0 auto;
   padding: 5rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
-  grid-template-rows: 100px 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5.5rem;
 }
 .site-services .services-title {
   font-size: 40px;
   color: #536942;
-  letter-spacing: -2px;
   position: relative;
-  text-align: center;
-  grid-column: 2/3;
 }
 .site-services .services-title::after {
   content: "";
   position: absolute;
-  top: 4rem;
+  top: 4.5rem;
   left: 50%;
-  right: 0;
+  transform: translateX(-50%);
   width: 100px;
   height: 3px;
   background-color: #ffd935;
-  transform: translateX(-50%);
 }
-.site-services .web-design {
-  grid-column: 1/2;
+.site-services .services-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.site-services .web-design .service-title {
+.site-services .services-content .service {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  padding: 15px;
+}
+.site-services .services-content .service .service-img {
+  width: 100%;
+  border-radius: 2px;
+}
+.site-services .services-content .service .service-title {
   font-size: 20px;
   color: #536942;
-  margin-top: 1.5rem;
 }
-.site-services .web-design .service-text {
+.site-services .services-content .service .service-text {
   color: #536942;
   line-height: 27px;
-  margin-top: 1rem;
-  max-width: 350px;
-}
-.site-services .graphic-design {
-  grid-column: 2/3;
-}
-.site-services .graphic-design .service-title {
-  font-size: 20px;
-  color: #536942;
-  margin-top: 1.5rem;
-}
-.site-services .graphic-design .service-text {
-  color: #536942;
-  line-height: 27px;
-  margin-top: 1rem;
-  max-width: 350px;
-}
-.site-services .content-creation {
-  grid-column: 3/5;
-}
-.site-services .content-creation .service-title {
-  font-size: 20px;
-  color: #536942;
-  margin-top: 1.5rem;
-}
-.site-services .content-creation .service-text {
-  color: #536942;
-  line-height: 27px;
-  margin-top: 1rem;
-  max-width: 350px;
+  max-width: 380px;
 }
 
 /*# sourceMappingURL=main.css.map */
