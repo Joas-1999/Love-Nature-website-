@@ -337,4 +337,37 @@ a {
   line-height: 27px;
 }
 
+.site-quote {
+  width: 100%;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+  background-color: #f5f8f4;
+}
+.site-quote .quote-img {
+  width: 37px;
+  opacity: 0.3;
+}
+.site-quote .quote-text {
+  font-size: 35px;
+  line-height: 43px;
+  color: #536942;
+  text-align: center;
+  max-width: 900px;
+}
+.site-quote .quote-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+.site-quote .quote-author .author-img {
+  width: 50px;
+}
+.site-quote .quote-author .author-name {
+  color: rgba(82, 104, 64, 0.5);
+}
+
 /*# sourceMappingURL=main.css.map */
