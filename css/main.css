@@ -292,6 +292,16 @@ a {
   color: #536942;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .site-services .services-title {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-services .services-title {
+    font-size: 34px;
+  }
+}
 .site-services .services-title::after {
   content: "";
   position: absolute;
@@ -310,6 +320,7 @@ a {
 .site-services .services-content .service {
   display: flex;
   flex-direction: column;
+  flex-basis: 325px;
   row-gap: 1.5rem;
   padding: 15px;
 }
@@ -322,9 +333,8 @@ a {
   color: #536942;
 }
 .site-services .services-content .service .service-text {
-  color: #536942;
+  color: rgba(83, 105, 66, 0.75);
   line-height: 27px;
-  max-width: 380px;
 }
 
 /*# sourceMappingURL=main.css.map */

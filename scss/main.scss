@@ -219,6 +219,14 @@
         color: $dark-olive-green;
         position: relative;
 
+        @include breakpoint (laptop) {
+            font-size: 38px;
+        }
+
+        @include breakpoint (tablet) {
+            font-size: 34px;
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -239,6 +247,7 @@
         .service {
             display: flex;
             flex-direction: column;
+            flex-basis: 325px;
             row-gap: 1.5rem;
             padding: 15px;
 
@@ -253,9 +262,8 @@
             }
 
             .service-text {
-                color: $dark-olive-green;
+                color: rgba($color: #536942, $alpha: 0.75);
                 line-height: 27px;
-                max-width: 380px;
             }
         }
     }
