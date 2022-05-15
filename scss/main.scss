@@ -320,3 +320,54 @@
         }
     }
 }
+
+//About us
+.site-about {
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 410px;
+        margin-right: 250px;
+
+        .about-subtitle {
+            font-size: 14px;
+            color: rgba(82,104,64,0.7);
+        }
+
+        .about-title {
+            font-size: 40px;
+            color: $dark-olive-green;
+            line-height: 44px;
+            letter-spacing: -2px;
+            margin-top: 1rem;
+        }
+
+        .about-text {
+            color: $dark-olive-green;
+            line-height: 26px;
+            margin-top: 2.5rem;
+        }
+
+        .about-cta {
+            padding: 16px 36px;
+            border: 1px solid $dark-olive-green;
+            align-self: flex-start;
+            color: $dark-olive-green;
+            border-radius: $btn-border-radius;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .about-img {
+        max-width: 100%;
+        width: 420px;
+        border-radius: 2px;
+
+    }
+}
