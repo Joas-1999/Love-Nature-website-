@@ -271,7 +271,6 @@
 
 //Quote 
 .site-quote {
-    width: 100%;
     padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
@@ -279,9 +278,17 @@
     row-gap: 3rem;
     background-color: #f5f8f4;
 
+    @include breakpoint (laptop) {
+        padding: 3rem 1rem;
+    }
+
     .quote-img {
         width: 37px;
         opacity: 0.3;
+
+        @include breakpoint (tablet) {
+            width: 34px;
+        }
     }
 
     .quote-text {
@@ -289,7 +296,13 @@
         line-height: 43px;
         color: $dark-olive-green;
         text-align: center;
-        max-width: 900px;
+        max-width: 730px;
+
+        @include breakpoint (tablet) {
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: -1.5px;
+        }
     }
 
     .quote-author {

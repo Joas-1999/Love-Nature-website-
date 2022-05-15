@@ -338,7 +338,6 @@ a {
 }
 
 .site-quote {
-  width: 100%;
   padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -346,16 +345,33 @@ a {
   row-gap: 3rem;
   background-color: #f5f8f4;
 }
+@media screen and (max-width: 1024px) {
+  .site-quote {
+    padding: 3rem 1rem;
+  }
+}
 .site-quote .quote-img {
   width: 37px;
   opacity: 0.3;
+}
+@media screen and (max-width: 768px) {
+  .site-quote .quote-img {
+    width: 34px;
+  }
 }
 .site-quote .quote-text {
   font-size: 35px;
   line-height: 43px;
   color: #536942;
   text-align: center;
-  max-width: 900px;
+  max-width: 730px;
+}
+@media screen and (max-width: 768px) {
+  .site-quote .quote-text {
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -1.5px;
+  }
 }
 .site-quote .quote-author {
   display: flex;
