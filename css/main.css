@@ -450,7 +450,7 @@ a {
 
 .site-cta {
   padding: 5rem 1rem;
-  min-height: 48vh;
+  min-height: 29vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -463,12 +463,6 @@ a {
 @media screen and (max-width: 1024px) {
   .site-cta {
     background-image: none;
-    min-height: 37vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .site-cta {
-    min-height: 33vh;
   }
 }
 .site-cta .cta-title {

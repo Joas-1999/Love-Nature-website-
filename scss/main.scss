@@ -393,7 +393,7 @@
 // Call to action
 .site-cta {
     padding: 5rem 1rem;
-    min-height: 48vh;
+    min-height: 29vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,11 +405,6 @@
 
     @include breakpoint (laptop) {
         background-image: none;
-        min-height: 37vh;
-    }
-
-    @include breakpoint (tablet) {
-        min-height: 33vh;
     }
 
     .cta-title {
