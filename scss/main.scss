@@ -270,7 +270,7 @@
     }
 }
 
-//Quote 
+// Quote 
 .site-quote {
     padding: 5rem 1rem;
     display: flex;
@@ -322,7 +322,7 @@
     }
 }
 
-//About us
+// About us
 .site-about {
     padding: 5rem 1rem;
     display: flex;
@@ -387,5 +387,65 @@
         width: 420px;
         border-radius: 2px;
 
+    }
+}
+
+// Call to action
+.site-cta {
+    padding: 5rem 1rem;
+    min-height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/footer-hero-big.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint (laptop) {
+        background-image: none;
+        min-height: 37vh;
+    }
+
+    @include breakpoint (tablet) {
+        min-height: 33vh;
+    }
+
+    .cta-title {
+        font-size: 58px;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        color: $dark-olive-green;
+
+        @include breakpoint (tablet) {
+            font-size: 42px;
+            letter-spacing: -1.5px;
+        }
+    }
+
+    .cta-text {
+        color: rgba($color: $dark-olive-green, $alpha: 0.75);
+        line-height: 32px;
+        max-width: 420px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .cta-btn {
+        padding: 17px 40px;
+        background-color: $gold-web-golden;
+        border-radius: $btn-border-radius;
+        color: rgba($color: $dark-olive-green, $alpha: 0.75);
+        margin-top: 2rem;
+        transition: background-color .3s ease;
+
+        @include breakpoint (laptop) {
+            padding: 16px 32px;
+        }
+
+        &:hover {
+            background-color: #dab200;
+        }
     }
 }

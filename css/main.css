@@ -448,4 +448,63 @@ a {
   border-radius: 2px;
 }
 
+.site-cta {
+  padding: 5rem 1rem;
+  min-height: 48vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/footer-hero-big.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .site-cta {
+    background-image: none;
+    min-height: 37vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-cta {
+    min-height: 33vh;
+  }
+}
+.site-cta .cta-title {
+  font-size: 58px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  color: #536942;
+}
+@media screen and (max-width: 768px) {
+  .site-cta .cta-title {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+}
+.site-cta .cta-text {
+  color: rgba(83, 105, 66, 0.75);
+  line-height: 32px;
+  max-width: 420px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.site-cta .cta-btn {
+  padding: 17px 40px;
+  background-color: #ffd935;
+  border-radius: 5px;
+  color: rgba(83, 105, 66, 0.75);
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+@media screen and (max-width: 1024px) {
+  .site-cta .cta-btn {
+    padding: 16px 32px;
+  }
+}
+.site-cta .cta-btn:hover {
+  background-color: #dab200;
+}
+
 /*# sourceMappingURL=main.css.map */
