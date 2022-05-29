@@ -399,7 +399,7 @@
     align-items: center;
     justify-content: center;
     background-image: url('../img/footer-hero-big.jpg');
-    background-position: center center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -447,7 +447,36 @@
 
 // Footer
 .site-footer {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+    column-gap: 50px;
+
+    .footer-nav {
+        display: flex;
+        flex-basis: 300px;
+        margin-left: 40px;
+
+        .f-nav-item {
+            color: rgba($color: $dark-olive-green, $alpha: 0.75);
+            margin-right: 1.5rem;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $dark-olive-green;
+            }
+        }
+    }
+
+    .footer-logo {
+        width: 60px;
+    }
+
+    .footer-copyright {
+        color: rgba($color: $dark-olive-green, $alpha: 0.75);
+        flex-basis: 300px;
+        text-align: end;
+        margin-right: 40px;
+    }
 }
